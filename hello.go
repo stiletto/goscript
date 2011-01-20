@@ -1,4 +1,4 @@
-#!/home/archhome/stil/git/goscript/fuck.sh --help
+#!/home/stil/git/goscript/goscript.386
 package main
 
 import "fmt"
