@@ -1,7 +1,7 @@
 package main
 
 import (
-	"io"
+    "io"
     "syscall"
     "fmt"
     "os"
@@ -100,7 +100,7 @@ func main() {
         lpid, err := os.ForkExec(GOBIN+"8l",[]string{GOBIN+"8l","-o",tempfile+".ld",tempfile+".cd"},nil,"",stdfiles)
         stage_check(lpid,err,"link")
         os.Chmod(tempfile+".ld",0700)
-        fmt.Println("done.")
+        //fmt.Println("done.")
     } else {
         //fmt.Println("Running cached.")
     }
